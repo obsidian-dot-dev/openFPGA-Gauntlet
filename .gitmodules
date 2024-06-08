@@ -1,0 +1,3 @@
+[submodule "external/gauntlet"]
+	path = external/gauntlet
+	url = https://github.com/obsidian-dot-dev/Arcade-Gauntlet_MiSTer

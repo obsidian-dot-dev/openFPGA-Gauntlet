@@ -1,0 +1,144 @@
+{
+	"interact":{
+		"magic": "APF_VER_1",
+		"variables": [	
+			{
+				"name": "Service Mode",
+				"id": 0,
+				"type": "check",
+				"enabled": true,
+				"persist": false,
+				"writeonly": true,
+				"address": "0xA0000000",
+				"defaultval": 0,
+				"value": 1,
+				"mask": "0xFFFFFFFE"
+			},
+			{
+				"name": "Reset Core",
+				"id": 1,
+				"type": "action",
+				"enabled": true,
+				"address": "0xB0000000",
+				"value": 1
+			},	
+			{
+				"name": "P1 Character",
+				"id": 2,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0x90000000",
+				"writeonly": true,
+				"defaultval": 0,
+				"mask": "0xFFFFFFFC",
+				"options": [
+				  {
+					"value": 0,
+					"name": "Warrior"
+				  },
+				  {
+					"value": 1,
+					"name": "Valkyrie"
+				  },
+				  {
+					"value": 2,
+					"name": "Wizard"
+				  },
+				  {
+					"value": 3,
+					"name": "Elf"
+				  }                  
+				]
+			},
+			{
+				"name": "P2 Character",
+				"id": 3,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0x90000000",
+				"writeonly": true,
+				"defaultval": 4,
+				"mask": "0xFFFFFFF3",
+				"options": [
+				  {
+					"value": 0,
+					"name": "Warrior"
+				  },
+				  {
+					"value": 4,
+					"name": "Valkyrie"
+				  },
+				  {
+					"value": 8,
+					"name": "Wizard"
+				  },
+				  {
+					"value": 12,
+					"name": "Elf"
+				  }                  
+				]
+			},
+			{
+				"name": "P3 Character",
+				"id": 4,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0x90000000",
+				"writeonly": true,
+				"defaultval": 32,
+				"mask": "0xFFFFFF3F",
+				"options": [
+				  {
+					"value": 0,
+					"name": "Warrior"
+				  },
+				  {
+					"value": 16,
+					"name": "Valkyrie"
+				  },
+				  {
+					"value": 32,
+					"name": "Wizard"
+				  },
+				  {
+					"value": 48,
+					"name": "Elf"
+				  }                  
+				]
+			},			
+			{
+				"name": "P4 Character",
+				"id": 5,
+				"type": "list",
+				"enabled": true,
+				"persist": true,
+				"address": "0x90000000",
+				"writeonly": true,
+				"defaultval": 64,
+				"mask": "0xFFFFFF3F",
+				"options": [
+				  {
+					"value": 0,
+					"name": "Warrior"
+				  },
+				  {
+					"value": 64,
+					"name": "Valkyrie"
+				  },
+				  {
+					"value": 128,
+					"name": "Wizard"
+				  },
+				  {
+					"value": 192,
+					"name": "Elf"
+				  }                  
+				]
+			}	
+		],
+		"messages": []
+	}
+}
