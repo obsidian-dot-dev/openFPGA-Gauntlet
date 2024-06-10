@@ -56,6 +56,8 @@ Place the necessary `.rom` files for the supported games onto the SD card under 
 
 To generate the `.rom` format binaries used by this core, you must use the MRA files included in this repo, along with the corresponding ROMs from the most recent MAME release.
 
+In order to play Vindicators part 2, you must run [a python script](https://github.com/MiSTer-devel/Arcade-Gauntlet_MiSTer/blob/main/scripts/descramble_2J.py) `descramble_2J.py 136059-1184.2j 136059-1184.des.2j` to descramble the address lines, and then copy the binary output file `136059-1184.des.2j` into the zip file with the original ROMs.
+
 ## History
 
 v0.9.0
